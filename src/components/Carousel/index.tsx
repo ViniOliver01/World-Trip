@@ -43,11 +43,11 @@ export default function Carousel(){
          </SwiperSlide>
 
          <SwiperSlide>
-            <Slide title='Ásia' path='' description='Asia' image={imageBg.Asia}/>
+            <Slide title='Ásia' path='Asia' description='' image={imageBg.Asia}/>
          </SwiperSlide>
         
          <SwiperSlide>
-            <Slide title='África' path='' description='Africa' image={imageBg.Africa}/>
+            <Slide title='África' path='Africa' description='' image={imageBg.Africa}/>
          </SwiperSlide>
 
          <SwiperSlide>
