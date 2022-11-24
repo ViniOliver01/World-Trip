@@ -1,4 +1,5 @@
 import { Flex, Heading } from "@chakra-ui/react";
+import { useEffect, useState } from "react";
 import Card from "./Card";
 
 const cityData =[
@@ -10,7 +11,28 @@ const cityData =[
    }
 ]
 
-export default function CardSection() {
+interface CardSectionProps{
+   continent?: string;
+}
+
+interface CityProps{
+   cityname: string
+   country: string
+   backgroundImg: string
+   flagImg: string
+}
+
+export default function CardSection({continent}: CardSectionProps) {
+   const [citys, setCitys] = useState<CityProps[]>([])
+   console.log("🚀 / CardSection / citys", citys)
+
+   useEffect(() => {
+      if(continent != "[continent]"){
+         fetch(`http://localhost:3004/citys/?continent=${continent}`)
+         .then((response) => response.json())
+         .then((data) => setCitys(data));
+      }
+   }, []);
 
    return (
       <Flex
@@ -26,7 +48,7 @@ export default function CardSection() {
             gap="10"
             marginTop="10"
          >
-            {cityData.map(city => {
+            {citys.map(city => {
                return (
                   <Card
                      city={city.cityname}

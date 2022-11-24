@@ -1,18 +1,32 @@
 import { Flex, Heading, VStack, Text, HStack } from "@chakra-ui/react";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 import CardSection from "../components/CardSection";
 import Header from './../components/Header';
 
-const continentData = [
-   {
-      continent: "Europa",
-      background: "https://images.unsplash.com/photo-1490642914619-7955a3fd483c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1493&q=80",
-   }
-]
+interface ContinentProps{
+   continent: string;
+   path: string;
+   background: string;
+}
 
 export default function Continent() {
+   const [continent, setContinent] = useState<ContinentProps>()
+
    const { asPath } = useRouter()
-   console.log("🚀 / Continent / asPath", asPath)
+   const path = asPath.slice(1)
+
+
+   useEffect(() => {
+      if(path != "[continent]"){
+         fetch(`http://localhost:3004/continents/?path=${path}`)
+         .then((response) => response.json())
+         .then((data) => setContinent(data[0]));
+      }
+   }, [asPath]);
+
+   
+
 
    return (
       <Flex
@@ -23,7 +37,7 @@ export default function Continent() {
          <Header />
          <Flex height={500}>
             <Flex
-               background={`url(${continentData[0].background}) center no-repeat`}
+               background={`url(${continent?.background}) center no-repeat`}
                filter='auto'
                brightness='60%'
                width={"100%"}
@@ -38,7 +52,9 @@ export default function Continent() {
                marginLeft="20"
                marginBottom="16"
             >
-               <Heading color="gray.50" fontSize="5xl" fontWeight="bold">Europa</Heading>
+               <Heading color="gray.50" fontSize="5xl" fontWeight="bold">
+                  {continent?.continent}
+               </Heading>
             </VStack>
          </Flex>
          <Flex 
@@ -74,7 +90,7 @@ export default function Continent() {
 
 
             </Flex>
-            <CardSection />
+            <CardSection continent={continent?.path}/>
 
          </Flex>
 
