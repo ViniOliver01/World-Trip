@@ -42,6 +42,7 @@ export default function CardSection({continent}: CardSectionProps) {
          </Heading>
          <Flex
             flex="1"
+            flexWrap="wrap"
             gap="10"
             marginTop="10"
          >
