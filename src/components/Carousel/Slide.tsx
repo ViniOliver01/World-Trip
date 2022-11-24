@@ -17,7 +17,7 @@ export default function Slide({ title, description, image, path }: SlideProps) {
             background={`url(${image}) center/cover no-repeat`}
             flexDirection="column"
             filter='auto'
-            brightness='60%'
+            brightness='40%'
             width={"100%"}
             height={"100%"}
             position="absolute"
