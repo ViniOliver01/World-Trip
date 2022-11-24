@@ -1,6 +1,6 @@
 import { Flex, Divider, Heading} from '@chakra-ui/react';
 import Banner from '../components/Banner';
-import Header from '../components/Header/index';
+import Header from '../components/Header';
 import Carousel from '../components/Carousel';
 import TravelTypes from '../components/TravelTypes';
 
