@@ -60,34 +60,34 @@
          "continent": "NorthAmerica",
          "cities": [
             {
-               "cityname": "Londres",
-               "country": "Reino Unido",
-               "backgroundImg": "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-               "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/290px-Flag_of_the_United_Kingdom.svg.png"
+               "cityname": "Miami",
+               "country": "Estados unidos",
+               "backgroundImg": "https://images.unsplash.com/photo-1514214246283-d427a95c5d2f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1380&q=80",
+               "flagImg": "https://static.significados.com.br/foto/estados-unidos.jpg"
             },
             {
-               "cityname": "Paris",
-               "country": "França",
-               "backgroundImg": "",
-               "flagImg": ""
+               "cityname": "Las Vegas",
+               "country": "Estados unidos",
+               "backgroundImg": "https://images.unsplash.com/photo-1581351721010-8cf859cb14a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+               "flagImg": "https://static.significados.com.br/foto/estados-unidos.jpg"
             },
             {
-               "cityname": "Roma",
-               "country": "Itália",
-               "backgroundImg": "",
-               "flagImg": ""
+               "cityname": "Vancouver",
+               "country": "Canada",
+               "backgroundImg": "https://images.unsplash.com/photo-1560813962-ff3d8fcf59ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
+               "flagImg": "https://static.significados.com.br/foto/bandeira-do-canada-significados-d7.jpg"
             },
             {
-               "cityname": "Praga",
-               "country": "República Tcheca",
-               "backgroundImg": "",
-               "flagImg": ""
+               "cityname": "Toronto",
+               "country": "Canada",
+               "backgroundImg": "https://images.unsplash.com/photo-1503206557829-9a9979ad1227?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80",
+               "flagImg": "https://static.significados.com.br/foto/bandeira-do-canada-significados-d7.jpg"
             },
             {
-               "cityname": "Amsterdã",
-               "country": "Holanda",
-               "backgroundImg": "",
-               "flagImg": ""
+               "cityname": "Cancun",
+               "country": "México",
+               "backgroundImg": "https://images.unsplash.com/photo-1552074284-5e88ef1aef18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+               "flagImg": "https://static.significados.com.br/foto/mexico.jpg"
             }
          ]
       },
@@ -95,34 +95,34 @@
          "continent": "SouthAmerica",
          "cities": [
             {
-               "cityname": "Cancun",
-               "country": "México",
-               "backgroundImg": "",
-               "flagImg": ""
-            },
-            {
-               "cityname": "Punta Cana",
-               "country": "República Dominicana",
-               "backgroundImg": "",
-               "flagImg": ""
-            },
-            {
-               "cityname": "Lima",
-               "country": "Peru",
-               "backgroundImg": "",
-               "flagImg": ""
-            },
-            {
-               "cityname": "Buenos Aires",
-               "country": "Argentina",
-               "backgroundImg": "",
-               "flagImg": ""
+               "cityname": "Rio de Janeiro",
+               "country": "Brasil",
+               "backgroundImg": "https://images.unsplash.com/photo-1561577553-674ce32847a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+               "flagImg": "https://static.significados.com.br/foto/brasil-6f.jpg"
             },
             {
                "cityname": "São Paulo",
                "country": "Brasil",
-               "backgroundImg": "",
-               "flagImg": ""
+               "backgroundImg": "https://viagemeturismo.abril.com.br/wp-content/uploads/2017/12/istock-842960000.jpg",
+               "flagImg": "https://static.significados.com.br/foto/brasil-6f.jpg"
+            },
+            {
+               "cityname": "Lima",
+               "country": "Peru",
+               "backgroundImg": "https://images.unsplash.com/photo-1580530719837-952e0515b69a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+               "flagImg": "https://static.significados.com.br/foto/bandeira-do-peru-cke.jpg"
+            },
+            {
+               "cityname": "Buenos Aires",
+               "country": "Argentina",
+               "backgroundImg": "https://images.unsplash.com/photo-1495317823589-e67efe1524b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+               "flagImg": "https://static.significados.com.br/foto/argentina.jpg"
+            },
+            {
+               "cityname": "Santiago",
+               "country": "Chile",
+               "backgroundImg": "https://images.unsplash.com/photo-1593985437133-03d5e1435c03?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1333&q=80",
+               "flagImg": "https://static.significados.com.br/foto/chile.jpg"
             }
          ]
       },
@@ -130,34 +130,34 @@
          "continent": "Asia",
          "cities": [
             {
-               "cityname": "Londres",
-               "country": "Reino Unido",
-               "backgroundImg": "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-               "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/290px-Flag_of_the_United_Kingdom.svg.png"
+               "cityname": "Bangkok",
+               "country": "Tailândia",
+               "backgroundImg": "https://images.unsplash.com/photo-1531169628939-e84f860fa5d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+               "flagImg": "https://static.significados.com.br/flags/th.svg"
             },
             {
-               "cityname": "Paris",
-               "country": "França",
-               "backgroundImg": "",
-               "flagImg": ""
+               "cityname": "Tóquio",
+               "country": "Japão",
+               "backgroundImg": "https://images.unsplash.com/photo-1549693578-a094e577de3f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+               "flagImg": "https://static.significados.com.br/foto/bandeira-do-japao-significados.jpg"
             },
             {
-               "cityname": "Roma",
-               "country": "Itália",
-               "backgroundImg": "",
-               "flagImg": ""
+               "cityname": "Hong Kong",
+               "country": "China",
+               "backgroundImg": "https://images.unsplash.com/photo-1536599018102-9f803c140fc1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80",
+               "flagImg": "https://static.significados.com.br/foto/china.jpg"
             },
             {
-               "cityname": "Praga",
-               "country": "República Tcheca",
-               "backgroundImg": "",
-               "flagImg": ""
+               "cityname": "Dubai",
+               "country": "Emirados Árabes",
+               "backgroundImg": "https://images.unsplash.com/flagged/photo-1559717201-fbb671ff56b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80",
+               "flagImg": "https://static.significados.com.br/foto/bandeira-dos-emirados-arabes-cke.jpg"
             },
             {
-               "cityname": "Amsterdã",
-               "country": "Holanda",
-               "backgroundImg": "",
-               "flagImg": ""
+               "cityname": "Delhi",
+               "country": "Indía",
+               "backgroundImg": "https://images.unsplash.com/photo-1597040663342-45b6af3d91a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
+               "flagImg": "https://static.significados.com.br/foto/bandeira-da-india-cke.jpg"
             }
          ]
       },
@@ -165,34 +165,34 @@
          "continent": "Africa",
          "cities": [
             {
-               "cityname": "Londres",
-               "country": "Reino Unido",
-               "backgroundImg": "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-               "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/290px-Flag_of_the_United_Kingdom.svg.png"
+               "cityname": "Cidade do Cabo",
+               "country": "África do Sul",
+               "backgroundImg": "http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcTfd_vOa29DU0mLgNi64CfwgCYXvkGJ_xaSk4rp9TJ6dewMYVoYyQOs7rY-b5d9Qlry",
+               "flagImg": "https://static.significados.com.br/foto/bandeira-africa-do-sul-cke.jpg"
             },
             {
-               "cityname": "Paris",
-               "country": "França",
-               "backgroundImg": "",
-               "flagImg": ""
+               "cityname": "Maputo",
+               "country": "Moçambique",
+               "backgroundImg": "https://www.flytap.com/-/media/Flytap/new-tap-pages/destinations/africa/mozambique/maputo/destinations-maputo-banner-mobile-1024x553.jpg",
+               "flagImg": "https://static.significados.com.br/foto/bandeira-de-mocambique-cke.jpg"
             },
             {
-               "cityname": "Roma",
-               "country": "Itália",
-               "backgroundImg": "",
-               "flagImg": ""
+               "cityname": "Harare",
+               "country": "Zimbábue",
+               "backgroundImg": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/6b/b7/17/caption.jpg?w=1200&h=-1&s=1",
+               "flagImg": "https://static.significados.com.br/flags/zw.svg"
             },
             {
-               "cityname": "Praga",
-               "country": "República Tcheca",
-               "backgroundImg": "",
-               "flagImg": ""
+               "cityname": "Tinghir",
+               "country": "Marrocos",
+               "backgroundImg": "https://www.segurospromo.com.br/blog/wp-content/uploads/2020/06/cidades-do-marrocos.jpg",
+               "flagImg": "https://static.significados.com.br/foto/bandeira-marrocos-cke.jpg"
             },
             {
-               "cityname": "Amsterdã",
-               "country": "Holanda",
-               "backgroundImg": "",
-               "flagImg": ""
+               "cityname": "Cairo",
+               "country": "Egito",
+               "backgroundImg": "https://s2.glbimg.com/J1QdIRCk2LzrH0b2WdGaQNa7P9E=/620x300/e.glbimg.com/og/ed/f/original/2019/03/19/800px-great_sphinx_of_giza_foreground_pyramid_of_menkaure_background._cairo_egypt_wikimedia_commons.jpg",
+               "flagImg": "https://static.significados.com.br/foto/bandeira-siria.jpg"
             }
          ]
       },
@@ -208,26 +208,26 @@
             {
                "cityname": "Paris",
                "country": "França",
-               "backgroundImg": "",
-               "flagImg": ""
+               "backgroundImg": "https://images.unsplash.com/photo-1508050919630-b135583b29ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80",
+               "flagImg": "https://static.significados.com.br/foto/franca.jpg"
             },
             {
                "cityname": "Roma",
                "country": "Itália",
-               "backgroundImg": "",
-               "flagImg": ""
+               "backgroundImg": "https://images.unsplash.com/photo-1509024644558-2f56ce76c490?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+               "flagImg": "https://static.significados.com.br/foto/bandeira-italia-0-cke.jpg"
             },
             {
                "cityname": "Praga",
                "country": "República Tcheca",
-               "backgroundImg": "",
-               "flagImg": ""
+               "backgroundImg": "https://images.unsplash.com/photo-1592906209472-a36b1f3782ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+               "flagImg": "https://static.significados.com.br/flags/cz.svg"
             },
             {
                "cityname": "Amsterdã",
                "country": "Holanda",
-               "backgroundImg": "",
-               "flagImg": ""
+               "backgroundImg": "https://images.unsplash.com/photo-1612098606612-e9b63793ca22?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+               "flagImg": "https://static.significados.com.br/foto/holanda.jpg"
             }
          ]
       },
@@ -235,37 +235,36 @@
          "continent": "Oceania",
          "cities": [
             {
-               "cityname": "Londres",
-               "country": "Reino Unido",
-               "backgroundImg": "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-               "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/290px-Flag_of_the_United_Kingdom.svg.png"
+               "cityname": "Camberra",
+               "country": "Austrália",
+               "backgroundImg": "https://rotadocanguru.com.br/wp-content/uploads/2018/03/canberra.jpg",
+               "flagImg": "https://static.significados.com.br/foto/australia.jpg"
             },
             {
-               "cityname": "Paris",
-               "country": "França",
-               "backgroundImg": "",
-               "flagImg": ""
+               "cityname": "Sydney",
+               "country": "Austrália",
+               "backgroundImg": "https://images.unsplash.com/photo-1616128618694-96e9e896ecb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1290&q=80",
+               "flagImg": "https://static.significados.com.br/foto/australia.jpg"
             },
             {
-               "cityname": "Roma",
-               "country": "Itália",
-               "backgroundImg": "",
-               "flagImg": ""
+               "cityname": "Suva",
+               "country": "Fiji",
+               "backgroundImg": "https://www.onde-e-quando.net/site/images/illustration/suva_664.jpg",
+               "flagImg": "https://static.significados.com.br/foto/bandeira-fiji-cke.jpg"
             },
             {
-               "cityname": "Praga",
-               "country": "República Tcheca",
-               "backgroundImg": "",
-               "flagImg": ""
+               "cityname": "Majuro",
+               "country": "Ilhas Marshall",
+               "backgroundImg": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/44/8b/f4/boutique-resort-bikendrik.jpg?w=500&h=300&s=1",
+               "flagImg": "https://static.significados.com.br/flags/mh.svg"
             },
             {
-               "cityname": "Amsterdã",
-               "country": "Holanda",
-               "backgroundImg": "",
-               "flagImg": ""
+               "cityname": "Wellington",
+               "country": "Nova Zelândia",
+               "backgroundImg": "https://www.cp4.com.br/wp-content/uploads/2019/02/6022200781_5c56160023_o.jpg",
+               "flagImg": "https://static.significados.com.br/foto/bandeira-da-nova-zelandia-cke.jpg"
             }
          ]
       }
-      
    ]
  }
