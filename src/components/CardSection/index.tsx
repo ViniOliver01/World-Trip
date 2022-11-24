@@ -1,18 +1,10 @@
 import { Flex, Heading } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Card from "./Card";
 
-const cityData =[
-   {
-      cityname: "Londres",
-      country: "Reino Unido",
-      backgroundImg: "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-      flagImg: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/290px-Flag_of_the_United_Kingdom.svg.png",
-   }
-]
-
 interface CardSectionProps{
-   continent?: string;
+   continent: string;
 }
 
 interface CityProps{
@@ -24,15 +16,20 @@ interface CityProps{
 
 export default function CardSection({continent}: CardSectionProps) {
    const [citys, setCitys] = useState<CityProps[]>([])
-   console.log("🚀 / CardSection / citys", citys)
+
+   const { asPath } = useRouter()
+   const path = asPath.slice(1)
 
    useEffect(() => {
-      if(continent != "[continent]"){
-         fetch(`http://localhost:3004/citys/?continent=${continent}`)
-         .then((response) => response.json())
-         .then((data) => setCitys(data));
+      async function getResponse() {
+         const response = await fetch(`http://localhost:3004/cities/?continent=${continent}`)
+         const data = await response.json();
+         setCitys(data[0].cities)
       }
-   }, []);
+      if(continent !== "[continent]"){
+         getResponse()
+      }
+   }, [asPath]);
 
    return (
       <Flex

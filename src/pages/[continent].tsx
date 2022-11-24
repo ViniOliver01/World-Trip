@@ -5,28 +5,31 @@ import CardSection from "../components/CardSection";
 import Header from './../components/Header';
 
 interface ContinentProps{
-   continent: string;
    path: string;
-   background: string;
+   continentname: string; 
+   description: string; 
+   countriesNumber: number; 
+   languagesNumber: number; 
+   citiesNumber: number; 
+   background: string; 
 }
 
 export default function Continent() {
    const [continent, setContinent] = useState<ContinentProps>()
 
-   const { asPath } = useRouter()
+   const { asPath, pathname } = useRouter()
    const path = asPath.slice(1)
 
-
    useEffect(() => {
-      if(path != "[continent]"){
-         fetch(`http://localhost:3004/continents/?path=${path}`)
-         .then((response) => response.json())
-         .then((data) => setContinent(data[0]));
+      async function getResponse() {
+         const response = await fetch(`http://localhost:3004/continents/?path=${path}`)
+         const data = await response.json();
+         setContinent(data[0])
+      }
+      if(path !== "[continent]"){
+         getResponse()
       }
    }, [asPath]);
-
-   
-
 
    return (
       <Flex
@@ -53,7 +56,7 @@ export default function Continent() {
                marginBottom="16"
             >
                <Heading color="gray.50" fontSize="5xl" fontWeight="bold">
-                  {continent?.continent}
+                  {continent?.continentname}
                </Heading>
             </VStack>
          </Flex>
@@ -70,27 +73,27 @@ export default function Continent() {
                marginTop="20"
             >
                <Text fontSize="2xl" fontWeight="normal" textAlign="justify" width={600}>
-                  A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste
+               {continent?.description}
                </Text>
                
                <HStack spacing="10">
                   <VStack>
-                     <Heading fontSize="5xl" color="yellow.500" fontWeight="semibold">50</Heading>
+                     <Heading fontSize="5xl" color="yellow.500" fontWeight="semibold">{continent?.countriesNumber}</Heading>
                      <Text fontSize="2xl" fontWeight="semibold" color="gray.700">países</Text>
                   </VStack>
                   <VStack>
-                     <Heading fontSize="5xl" color="yellow.500" fontWeight="semibold">60</Heading>
+                     <Heading fontSize="5xl" color="yellow.500" fontWeight="semibold">{continent?.languagesNumber}</Heading>
                      <Text fontSize="2xl" fontWeight="semibold" color="gray.700">línguas</Text>
                   </VStack>
                   <VStack>
-                     <Heading fontSize="5xl" color="yellow.500" fontWeight="semibold">27</Heading>
+                     <Heading fontSize="5xl" color="yellow.500" fontWeight="semibold">{continent?.citiesNumber}</Heading>
                      <Text fontSize="2xl" fontWeight="semibold" color="gray.700">cidades+100</Text>
                   </VStack>
                </HStack>
 
 
             </Flex>
-            <CardSection continent={continent?.path}/>
+            <CardSection continent={path}/>
 
          </Flex>
 
