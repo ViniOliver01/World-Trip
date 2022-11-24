@@ -1,71 +1,271 @@
 {
    "continents": [
       {
-         "continent": "América do Norte",
          "path":"NorthAmerica",
+         "continentname": "América do Norte",
+         "description": "",
+         "countriesNumber": "",
+         "languagesNumber": "",
+         "citiesNumber": "",
          "background": ""
       },
       {
-         "continent": "América do Sul",
          "path":"SouthAmerica",
+         "continentname": "América do Sul",
+         "description": "",
+         "countriesNumber": "",
+         "languagesNumber": "",
+         "citiesNumber": "",
          "background": ""
       },
       {
-         "continent": "Ásia",
          "path":"Asia",
+         "continentname": "Ásia",
+         "description": "",
+         "countriesNumber": "",
+         "languagesNumber": "",
+         "citiesNumber": "",
          "background": ""
       },
       {
-         "continent": "Africa",
          "path":"Africa",
+         "continentname": "Africa",
+         "description": "",
+         "countriesNumber": "",
+         "languagesNumber": "",
+         "citiesNumber": "",
          "background": ""
       },
       {
-         "continent": "Europa",
          "path":"Europa",
+         "continentname": "Europa",
+         "description": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
+         "countriesNumber": "50",
+         "languagesNumber": "60",
+         "citiesNumber": "27",
          "background": "https://images.unsplash.com/photo-1490642914619-7955a3fd483c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1493&q=80"
       },
       {
-         "continent": "Oceania",
          "path":"Oceania",
+         "continentname": "Oceania",
+         "description": "",
+         "countriesNumber": "",
+         "languagesNumber": "",
+         "citiesNumber": "",
          "background": ""
       }
    ],
    "citys": [
       {
-         "continent": "Europa",
-         "cityname": "Londres",
-         "country": "Reino Unido",
-         "backgroundImg": "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-         "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/290px-Flag_of_the_United_Kingdom.svg.png"
+         "continent": "NorthAmerica",
+         "citys": [
+            {
+               "cityname": "Londres",
+               "country": "Reino Unido",
+               "backgroundImg": "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+               "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/290px-Flag_of_the_United_Kingdom.svg.png"
+            },
+            {
+               "cityname": "Paris",
+               "country": "França",
+               "backgroundImg": "",
+               "flagImg": ""
+            },
+            {
+               "cityname": "Roma",
+               "country": "Itália",
+               "backgroundImg": "",
+               "flagImg": ""
+            },
+            {
+               "cityname": "Praga",
+               "country": "República Tcheca",
+               "backgroundImg": "",
+               "flagImg": ""
+            },
+            {
+               "cityname": "Amsterdã",
+               "country": "Holanda",
+               "backgroundImg": "",
+               "flagImg": ""
+            }
+         ]
+      },
+      {
+         "continent": "SouthAmerica",
+         "citys": [
+            {
+               "cityname": "Cancun",
+               "country": "México",
+               "backgroundImg": "",
+               "flagImg": ""
+            },
+            {
+               "cityname": "Punta Cana",
+               "country": "República Dominicana",
+               "backgroundImg": "",
+               "flagImg": ""
+            },
+            {
+               "cityname": "Lima",
+               "country": "Peru",
+               "backgroundImg": "",
+               "flagImg": ""
+            },
+            {
+               "cityname": "Buenos Aires",
+               "country": "Argentina",
+               "backgroundImg": "",
+               "flagImg": ""
+            },
+            {
+               "cityname": "São Paulo",
+               "country": "Brasil",
+               "backgroundImg": "",
+               "flagImg": ""
+            }
+         ]
+      },
+      {
+         "continent": "Asia",
+         "citys": [
+            {
+               "cityname": "Londres",
+               "country": "Reino Unido",
+               "backgroundImg": "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+               "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/290px-Flag_of_the_United_Kingdom.svg.png"
+            },
+            {
+               "cityname": "Paris",
+               "country": "França",
+               "backgroundImg": "",
+               "flagImg": ""
+            },
+            {
+               "cityname": "Roma",
+               "country": "Itália",
+               "backgroundImg": "",
+               "flagImg": ""
+            },
+            {
+               "cityname": "Praga",
+               "country": "República Tcheca",
+               "backgroundImg": "",
+               "flagImg": ""
+            },
+            {
+               "cityname": "Amsterdã",
+               "country": "Holanda",
+               "backgroundImg": "",
+               "flagImg": ""
+            }
+         ]
+      },
+      {
+         "continent": "Africa",
+         "citys": [
+            {
+               "cityname": "Londres",
+               "country": "Reino Unido",
+               "backgroundImg": "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+               "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/290px-Flag_of_the_United_Kingdom.svg.png"
+            },
+            {
+               "cityname": "Paris",
+               "country": "França",
+               "backgroundImg": "",
+               "flagImg": ""
+            },
+            {
+               "cityname": "Roma",
+               "country": "Itália",
+               "backgroundImg": "",
+               "flagImg": ""
+            },
+            {
+               "cityname": "Praga",
+               "country": "República Tcheca",
+               "backgroundImg": "",
+               "flagImg": ""
+            },
+            {
+               "cityname": "Amsterdã",
+               "country": "Holanda",
+               "backgroundImg": "",
+               "flagImg": ""
+            }
+         ]
       },
       {
          "continent": "Europa",
-         "cityname": "Paris",
-         "country": "França",
-         "backgroundImg": "",
-         "flagImg": ""
+         "citys": [
+            {
+               "cityname": "Londres",
+               "country": "Reino Unido",
+               "backgroundImg": "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+               "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/290px-Flag_of_the_United_Kingdom.svg.png"
+            },
+            {
+               "cityname": "Paris",
+               "country": "França",
+               "backgroundImg": "",
+               "flagImg": ""
+            },
+            {
+               "cityname": "Roma",
+               "country": "Itália",
+               "backgroundImg": "",
+               "flagImg": ""
+            },
+            {
+               "cityname": "Praga",
+               "country": "República Tcheca",
+               "backgroundImg": "",
+               "flagImg": ""
+            },
+            {
+               "cityname": "Amsterdã",
+               "country": "Holanda",
+               "backgroundImg": "",
+               "flagImg": ""
+            }
+         ]
       },
       {
-         "continent": "Europa",
-         "cityname": "Roma",
-         "country": "Itália",
-         "backgroundImg": "",
-         "flagImg": ""
-      },
-      {
-         "continent": "Europa",
-         "cityname": "Praga",
-         "country": "República Tcheca",
-         "backgroundImg": "",
-         "flagImg": ""
-      },
-      {
-         "continent": "Europa",
-         "cityname": "Amsterdã",
-         "country": "Holanda",
-         "backgroundImg": "",
-         "flagImg": ""
+         "continent": "Oceania",
+         "citys": [
+            {
+               "cityname": "Londres",
+               "country": "Reino Unido",
+               "backgroundImg": "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+               "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/290px-Flag_of_the_United_Kingdom.svg.png"
+            },
+            {
+               "cityname": "Paris",
+               "country": "França",
+               "backgroundImg": "",
+               "flagImg": ""
+            },
+            {
+               "cityname": "Roma",
+               "country": "Itália",
+               "backgroundImg": "",
+               "flagImg": ""
+            },
+            {
+               "cityname": "Praga",
+               "country": "República Tcheca",
+               "backgroundImg": "",
+               "flagImg": ""
+            },
+            {
+               "cityname": "Amsterdã",
+               "country": "Holanda",
+               "backgroundImg": "",
+               "flagImg": ""
+            }
+         ]
       }
+      
    ]
  }
