@@ -55,10 +55,10 @@
          "background": ""
       }
    ],
-   "citys": [
+   "cities": [
       {
          "continent": "NorthAmerica",
-         "citys": [
+         "cities": [
             {
                "cityname": "Londres",
                "country": "Reino Unido",
@@ -93,7 +93,7 @@
       },
       {
          "continent": "SouthAmerica",
-         "citys": [
+         "cities": [
             {
                "cityname": "Cancun",
                "country": "México",
@@ -128,7 +128,7 @@
       },
       {
          "continent": "Asia",
-         "citys": [
+         "cities": [
             {
                "cityname": "Londres",
                "country": "Reino Unido",
@@ -163,7 +163,7 @@
       },
       {
          "continent": "Africa",
-         "citys": [
+         "cities": [
             {
                "cityname": "Londres",
                "country": "Reino Unido",
@@ -198,7 +198,7 @@
       },
       {
          "continent": "Europa",
-         "citys": [
+         "cities": [
             {
                "cityname": "Londres",
                "country": "Reino Unido",
@@ -233,7 +233,7 @@
       },
       {
          "continent": "Oceania",
-         "citys": [
+         "cities": [
             {
                "cityname": "Londres",
                "country": "Reino Unido",
