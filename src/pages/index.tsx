@@ -1,8 +1,8 @@
-import { Flex, VStack, Text, Divider, Heading} from '@chakra-ui/react';
+import { Flex, Divider, Heading} from '@chakra-ui/react';
 import Banner from '../components/Banner';
 import Header from '../components/Header/index';
-import Image from 'next/image';
 import Carousel from '../components/Carousel';
+import TravelTypes from '../components/TravelTypes';
 
 export default function Home() {
    
@@ -15,37 +15,11 @@ export default function Home() {
       >
          <Header />
          <Banner />
-         <Flex 
-            marginTop={120} 
-            paddingInline="20"
-            justifyContent="space-between"
-         > 
-            <VStack>
-               <Image src="/TravelTypes/cocktail.png" alt={""} width={85} height={85}/>
-               <Text fontSize="2xl" fontWeight="semibold" color="gray.700">vida noturna</Text>
-            </VStack>
-            <VStack>
-               <Image src="/TravelTypes/surf.png" alt={""} width={85} height={85}/>
-               <Text fontSize="2xl" fontWeight="semibold" color="gray.700">praia</Text>
-            </VStack>
-            <VStack>
-               <Image src="/TravelTypes/building.png" alt={""} width={85} height={85}/>
-               <Text fontSize="2xl" fontWeight="semibold" color="gray.700">moderno</Text>
-            </VStack>
-            <VStack>
-               <Image src="/TravelTypes/museum.png" alt={""} width={85} height={85}/>
-               <Text fontSize="2xl" fontWeight="semibold" color="gray.700">clássico</Text>
-            </VStack>
-            <VStack>
-               <Image src="/TravelTypes/earth.png" alt={""} width={85} height={85}/>
-               <Text fontSize="2xl" fontWeight="semibold" color="gray.700">e mais...</Text>
-            </VStack>
-            
-         </Flex>
+         <TravelTypes />
+         
          <Flex justify="center">
             <Divider width={"90px"} marginTop={10} borderWidth="1px" borderColor="gray.700"/>
          </Flex>
-
 
          <Flex 
             flex="1"
