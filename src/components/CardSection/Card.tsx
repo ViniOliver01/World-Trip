@@ -29,7 +29,7 @@ export default function Card({ city, country, backgroundImg, flagImg }: CardProp
           <Heading fontSize="xl" fontWeight="semibold" color="gray.700">{city}</Heading>
           <Text fontSize="md" fontWeight="medium" color="gray.600">{country}</Text>
         </Flex>
-        <Image src={flagImg} alt="" borderRadius="100%" width={30} height={30} />
+        <Image src={flagImg} fit="cover" alt="" borderRadius="100%" width={30} height={30} />
       </HStack>
     </Box>
   );
