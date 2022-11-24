@@ -40,7 +40,7 @@ export default function Continent() {
          <Header withIcon/>
          <Flex height={500}>
             <Flex
-               background={`url(${continent?.background}) center no-repeat`}
+               background={`url(${continent?.background}) center/cover no-repeat`}
                filter='auto'
                brightness='60%'
                width={"100%"}
