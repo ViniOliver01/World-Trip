@@ -1,11 +1,38 @@
-import { Flex } from "@chakra-ui/react";
+import { Flex, Icon } from "@chakra-ui/react";
 import Image from "next/image";
+import Link from "next/link";
+import {FiChevronLeft} from 'react-icons/fi'
 
-export default function Header(){
+interface HeaderProps {
+  withIcon?: boolean;
+}
 
+export default function Header({withIcon = false}: HeaderProps){
+  if(withIcon){
+    return (
+      <Flex align="center" padding="6">
+        <Link href="/">
+          <Flex>
+            <Icon
+                as={FiChevronLeft}
+                justifySelf="flex-start"
+                alignSelf="center"
+                position="absolute" 
+                color="gray.700"
+                left="40"
+                fontSize="32"
+              />
+          </Flex>
+        </Link>
+        <Flex flex="1" justify="center">
+          <Image src="/Logo.png" alt="" width={180} height={45}/>
+        </Flex>
+      </Flex>
+    )
+  }
   return (
-    <Flex justify="center" padding="6">
-      <Image src="/Logo.png" alt="" width={180} height={45}/>
+    <Flex align="center" padding="6" justify="center">
+        <Image src="/Logo.png" alt="" width={180} height={45}/>
     </Flex>
-  );
+  )
 }

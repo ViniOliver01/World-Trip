@@ -37,7 +37,7 @@ export default function Continent() {
          flexDirection="column"
          marginBottom={"10"}
       >
-         <Header />
+         <Header withIcon/>
          <Flex height={500}>
             <Flex
                background={`url(${continent?.background}) center no-repeat`}
