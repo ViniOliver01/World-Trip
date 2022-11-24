@@ -35,27 +35,27 @@ export default function Carousel(){
          onSlideChange={() => console.log('slide change')}
          >
          <SwiperSlide>
-            <Slide title='América do Norte' description='' image={imageBg.NorthAmerica}/>
+            <Slide title='América do Norte' path='NorthAmerica' description='' image={imageBg.NorthAmerica}/>
          </SwiperSlide>
 
          <SwiperSlide>
-            <Slide title='América do Sul' description='' image={imageBg.SouthAmerica}/>
+            <Slide title='América do Sul' path='SouthAmerica' description='' image={imageBg.SouthAmerica}/>
          </SwiperSlide>
 
          <SwiperSlide>
-            <Slide title='Ásia' description='' image={imageBg.Asia}/>
+            <Slide title='Ásia' path='' description='Asia' image={imageBg.Asia}/>
          </SwiperSlide>
         
          <SwiperSlide>
-            <Slide title='África' description='' image={imageBg.Africa}/>
+            <Slide title='África' path='' description='Africa' image={imageBg.Africa}/>
          </SwiperSlide>
 
          <SwiperSlide>
-            <Slide title='Europa' description='O continente mais antigo.' image={imageBg.Europa}/>
+            <Slide title='Europa' path='Europa' description='O continente mais antigo.' image={imageBg.Europa}/>
          </SwiperSlide>
 
          <SwiperSlide>
-            <Slide title='Oceania ' description='' image={imageBg.Oceania}/>
+            <Slide title='Oceania' path='Oceania' description='' image={imageBg.Oceania}/>
          </SwiperSlide>
          ...
       </Swiper>
