@@ -8,6 +8,8 @@ import 'swiper/css/scrollbar';
 import Slide from './Slide';
 import { useEffect, useState } from 'react';
 
+import styles from './swiperStyles.module.scss'
+
 interface CarouselProps {
    background: string;
    path: string;
@@ -49,7 +51,7 @@ export default function Carousel() {
             height={[250, 456]}
             justifyContent="center"
          >
-            <Flex height={"100%"} width={"100%"} >
+            <Flex height={"100%"} width={"100%"} className={styles.sliderWrapper}>
                <Swiper
                   modules={[Navigation, Pagination, Scrollbar, A11y]}
                   slidesPerView={1}
