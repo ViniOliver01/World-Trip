@@ -1,35 +1,72 @@
-import { Flex, VStack, Text } from "@chakra-ui/react";
+import { Flex, VStack, Text, useBreakpointValue, Icon } from "@chakra-ui/react";
 import Image from 'next/image';
+import { BsDot } from 'react-icons/bs'
 
-export default function TravelTypes(){
+const travelTypesData = [
+   {
+      title: "vida noturna",
+      iconSrc: "/TravelTypes/cocktail.png"
+   },
+   {
+      title: "praia",
+      iconSrc: "/TravelTypes/surf.png"
+   },
+   {
+      title: "moderno",
+      iconSrc: "/TravelTypes/building.png"
+   },
+   {
+      title: "clássico",
+      iconSrc: "/TravelTypes/museum.png"
+   },
+   {
+      title: "e mais...",
+      iconSrc: "/TravelTypes/earth.png"
+   },
+]
 
-  return (
-   <Flex 
-      marginTop={120} 
-      paddingInline="20"
-      justifyContent="space-between"
-   > 
-      <VStack width={160}>
-         <Image src="/TravelTypes/cocktail.png" alt={""} width={85} height={85}/>
-         <Text fontSize="2xl" fontWeight="semibold" color="gray.700">vida noturna</Text>
-      </VStack>
-      <VStack width={160}>
-         <Image src="/TravelTypes/surf.png" alt={""} width={85} height={85}/>
-         <Text fontSize="2xl" fontWeight="semibold" color="gray.700">praia</Text>
-      </VStack>
-      <VStack width={160}>
-         <Image src="/TravelTypes/building.png" alt={""} width={85} height={85}/>
-         <Text fontSize="2xl" fontWeight="semibold" color="gray.700">moderno</Text>
-      </VStack>
-      <VStack width={160}>
-         <Image src="/TravelTypes/museum.png" alt={""} width={85} height={85}/>
-         <Text fontSize="2xl" fontWeight="semibold" color="gray.700">clássico</Text>
-      </VStack>
-      <VStack width={160}>
-         <Image src="/TravelTypes/earth.png" alt={""} width={85} height={85}/>
-         <Text fontSize="2xl" fontWeight="semibold" color="gray.700">e mais...</Text>
-      </VStack>
-      
-   </Flex>
-  );
+export default function TravelTypes() {
+   const isWideVersion = useBreakpointValue({
+      base: false,
+      lg: true,
+   })
+
+   return (
+      <Flex
+         marginTop={[9, 120]}
+         paddingInline={["10", "20"]}
+      >
+         <Flex
+            flex="1"
+            justifyContent={["space-evenly", "space-between"]}
+            maxWidth={1440}
+            flexWrap={["wrap", "nowrap"]}
+            width="100%"
+            height={"120px"}
+         >
+            {travelTypesData.map(type => {
+               return (
+                  <VStack maxWidth={160}>
+                     {isWideVersion && <Image src={type.iconSrc} alt={""} width={85} height={85} />}
+                     <Flex
+                        flex="1"
+                        flexDirection="row"
+                        alignItems="center"
+                     >
+                        {!isWideVersion && <Icon as={BsDot} height="100%" fontSize={"3xl"} color="yellow.500" />}
+                        <Text
+                           fontSize={["lg", "2xl"]}
+                           fontWeight="semibold"
+                           color="gray.700"
+                        >
+                           {type.title}
+                        </Text>
+                     </Flex>
+                  </VStack>
+               )
+            })}
+
+         </Flex>
+      </Flex>
+   );
 }

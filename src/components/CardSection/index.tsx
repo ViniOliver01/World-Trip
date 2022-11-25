@@ -3,22 +3,20 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Card from "./Card";
 
-interface CardSectionProps{
+interface CardSectionProps {
    continent: string;
 }
 
-interface CityProps{
+interface CityProps {
    cityname: string
    country: string
    backgroundImg: string
    flagImg: string
 }
 
-export default function CardSection({continent}: CardSectionProps) {
+export default function CardSection({ continent }: CardSectionProps) {
    const [citys, setCitys] = useState<CityProps[]>([])
-
    const { asPath } = useRouter()
-   const path = asPath.slice(1)
 
    useEffect(() => {
       async function getResponse() {
@@ -26,7 +24,7 @@ export default function CardSection({continent}: CardSectionProps) {
          const data = await response.json();
          setCitys(data[0].cities)
       }
-      if(continent !== "[continent]"){
+      if (continent !== "[continent]") {
          getResponse()
       }
    }, [asPath]);
@@ -37,7 +35,7 @@ export default function CardSection({continent}: CardSectionProps) {
          flexDirection="column"
          marginTop="20"
       >
-         <Heading fontSize="4xl" fontWeight="medium" color="gray.700">
+         <Heading fontSize={["2xl", "4xl"]} fontWeight="medium" color="gray.700">
             Cidades +100
          </Heading>
          <Flex
@@ -45,6 +43,7 @@ export default function CardSection({continent}: CardSectionProps) {
             flexWrap="wrap"
             gap="10"
             marginTop="10"
+            justify={["center", "space-around", "space-around", "space-between"]}
          >
             {citys.map(city => {
                return (

@@ -8,7 +8,6 @@ interface SlideProps {
    path: string;
 }
 
-
 export default function Slide({ title, description, image, path }: SlideProps) {
 
    return (
@@ -32,8 +31,16 @@ export default function Slide({ title, description, image, path }: SlideProps) {
             width={"100%"}
             height={"100%"}
          >
-            <Heading color="gray.50" fontSize="5xl" fontWeight="bold">{title}</Heading>
-            <Text color="gray.100" fontSize="2xl" fontWeight="bold">{description}</Text>
+            <Heading color="gray.50" fontSize={["2xl", "5xl"]} fontWeight="bold">{title}</Heading>
+            <Text
+               color="gray.100"
+               fontSize={["sm", "2xl"]}
+               fontWeight="bold"
+               width={"75%"}
+               textAlign="center"
+            >
+               {description}
+            </Text>
          </VStack>
       </Link>
    );

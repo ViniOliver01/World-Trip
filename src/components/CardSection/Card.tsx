@@ -14,10 +14,10 @@ export default function Card({ city, country, backgroundImg, flagImg }: CardProp
       width={256}
       height={279}
     >
-      <Image 
-        src={backgroundImg} 
-        alt="" 
-        borderTopRadius="4" 
+      <Image
+        src={backgroundImg}
+        alt=""
+        borderTopRadius="4"
         fit="cover"
         width={256}
         height={170}
