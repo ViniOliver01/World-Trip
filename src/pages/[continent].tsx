@@ -78,7 +78,7 @@ export default function Continent() {
          >
             <Flex
                flex="1"
-               flexDirection={["column", "column", "column", "row"]}
+               flexDirection={["column", "column", "column", "column", "row"]}
                justifyContent="space-between"
                marginTop={[6, 20]}
                gap={10}
@@ -98,15 +98,15 @@ export default function Continent() {
                   justifyContent="space-between"
                   gap={10}
                >
-                  <VStack align="flex-start">
+                  <VStack align={["flex-start","flex-start", "center"]}>
                      <Heading fontSize={["2xl", "5xl"]} color="yellow.500" fontWeight="semibold">{continent?.countriesNumber}</Heading>
                      <Text fontSize={["lg", "2xl"]} fontWeight="semibold" color="gray.700">países</Text>
                   </VStack>
-                  <VStack align="flex-start">
+                  <VStack align={["flex-start","flex-start", "center"]}>
                      <Heading fontSize={["2xl", "5xl"]} color="yellow.500" fontWeight="semibold">{continent?.languagesNumber}</Heading>
                      <Text fontSize={["lg", "2xl"]} fontWeight="semibold" color="gray.700">línguas</Text>
                   </VStack>
-                  <VStack align="flex-start">
+                  <VStack align={["flex-start","flex-start", "center"]}>
                      <Heading fontSize={["2xl", "5xl"]} color="yellow.500" fontWeight="semibold">{continent?.citiesNumber}</Heading>
                      <Text fontSize={["lg", "2xl"]} fontWeight="semibold" color="gray.700">cidades+100</Text>
                   </VStack>

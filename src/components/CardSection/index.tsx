@@ -39,15 +39,16 @@ export default function CardSection({ continent }: CardSectionProps) {
          flexDirection="column"
          marginTop="20"
       >
-         <Heading fontSize={["2xl", "4xl"]} fontWeight="medium" color="gray.700">
+         <Heading fontSize={["2xl", "4xl"]} fontWeight="medium" color="gray.700" marginRight="auto">
             Cidades +100
          </Heading>
          <Flex
             flex="1"
             flexWrap="wrap"
-            gap="10"
             marginTop="10"
-            justify={["center", "space-around", "space-around", "space-between"]}
+            gap="10"
+            justify={["center", "center", "start", "start"]}
+            width="fit-content"
          >
             {citys.map(city => {
                return (
