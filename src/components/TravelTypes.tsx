@@ -46,7 +46,7 @@ export default function TravelTypes() {
          >
             {travelTypesData.map(type => {
                return (
-                  <VStack maxWidth={160}>
+                  <VStack key={type.title} maxWidth={160}>
                      {isWideVersion && <Image src={type.iconSrc} alt={""} width={85} height={85} />}
                      <Flex
                         flex="1"
