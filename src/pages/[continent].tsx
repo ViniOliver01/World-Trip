@@ -1,8 +1,9 @@
-import { Flex, Heading, VStack, Text, useBreakpointValue } from "@chakra-ui/react";
+import { Flex, Heading, VStack, Text, useBreakpointValue, Tooltip, Icon, HStack } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import CardSection from "../components/CardSection";
 import Header from './../components/Header';
+import {AiOutlineInfoCircle} from 'react-icons/ai'
 
 interface ContinentProps {
    path: string;
@@ -108,7 +109,14 @@ export default function Continent() {
                   </VStack>
                   <VStack align={["flex-start","flex-start", "center"]}>
                      <Heading fontSize={["2xl", "5xl"]} color="yellow.500" fontWeight="semibold">{continent?.citiesNumber}</Heading>
-                     <Text fontSize={["lg", "2xl"]} fontWeight="semibold" color="gray.700">cidades+100</Text>
+                     <HStack>
+                        <Text fontSize={["lg", "2xl"]} fontWeight="semibold" color="gray.700">cidades+100</Text>
+                        <Tooltip label='Quantidade de cidades entre as 100 mais visitadas do mundo' fontSize='md'>
+                              <Flex>
+                                 <Icon as={AiOutlineInfoCircle} fontSize="xl" color="gray.600"/>
+                              </Flex>
+                        </Tooltip>
+                     </HStack>
                   </VStack>
                </Flex>
             </Flex>
