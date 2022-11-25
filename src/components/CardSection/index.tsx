@@ -20,9 +20,13 @@ export default function CardSection({ continent }: CardSectionProps) {
 
    useEffect(() => {
       async function getResponse() {
-         const response = await fetch(`http://localhost:3004/cities/?continent=${continent}`)
-         const data = await response.json();
-         setCitys(data[0].cities)
+         try{
+            const response = await fetch(`http://localhost:3004/cities/?continent=${continent}`)
+            const data = await response.json();
+            setCitys(data[0].cities)
+         }catch(error) {
+            console.error(error)
+         }
       }
       if (continent !== "[continent]") {
          getResponse()

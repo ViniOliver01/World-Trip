@@ -23,14 +23,18 @@ export default function Continent() {
    })
    console.log("🚀 / Continent / isWideVersion", isWideVersion)
 
-   const { asPath, pathname } = useRouter()
+   const { asPath } = useRouter()
    const path = asPath.slice(1)
 
    useEffect(() => {
       async function getResponse() {
-         const response = await fetch(`http://localhost:3004/continents/?path=${path}`)
-         const data = await response.json();
-         setContinent(data[0])
+         try {
+            const response = await fetch(`http://localhost:3004/continents/?path=${path}`)
+            const data = await response.json();
+            setContinent(data[0])
+         } catch (error) {
+            console.error(error)
+         }
       }
       if (path !== "[continent]") {
          getResponse()

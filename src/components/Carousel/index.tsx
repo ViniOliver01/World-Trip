@@ -20,18 +20,22 @@ export default function Carousel() {
 
    useEffect(() => {
       async function getResponse() {
-         const response = await fetch(`http://localhost:3004/continents/`)
-         const data = await response.json();
-         console.log("🚀 / getResponse / data", data)
-         const bgList = data.map((item: CarouselProps) => {
-            return {
-               path: item.path,
-               continentname: item.continentname,
-               shortDescription: item.shortDescription,
-               background: item.background,
-            }
-         })
-         setContinentList(bgList)
+         try {
+            const response = await fetch(`http://localhost:3004/continents/`)
+            const data = await response.json();
+            const bgList = data.map((item: CarouselProps) => {
+               return {
+                  path: item.path,
+                  continentname: item.continentname,
+                  shortDescription: item.shortDescription,
+                  background: item.background,
+               }
+            })
+            setContinentList(bgList)
+            
+         } catch (error) {
+            console.error(error)
+         }
       }
       getResponse()
    }, []);
