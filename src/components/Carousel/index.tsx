@@ -55,12 +55,10 @@ export default function Carousel() {
                   slidesPerView={1}
                   navigation
                   pagination={{ clickable: true }}
-                  onSwiper={(swiper) => console.log(swiper)}
-                  onSlideChange={() => console.log('slide change')}
                >
                   {continentList.map(continent => {
                      return (
-                        <SwiperSlide>
+                        <SwiperSlide key={continent.path}>
                            <Slide
                               title={continent.continentname}
                               path={continent.path}
@@ -70,7 +68,6 @@ export default function Carousel() {
                         </SwiperSlide>
                      )
                   })}
-                  ...
                </Swiper>
             </Flex>
          </Flex>
