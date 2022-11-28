@@ -34,7 +34,8 @@ export default function TravelTypes() {
    return (
       <Flex
          marginTop={[9, 120]}
-         paddingInline={["10", "20"]}
+         paddingInline={["5", "20"]}
+         justify="center"
       >
          <Flex
             flex="1"
@@ -42,11 +43,11 @@ export default function TravelTypes() {
             maxWidth={1440}
             flexWrap={["wrap", "nowrap"]}
             width="100%"
-            height={"120px"}
+            height={120}
          >
             {travelTypesData.map(type => {
                return (
-                  <VStack key={type.title} maxWidth={160}>
+                  <VStack key={type.title} width={160}>
                      {isWideVersion && <Image src={type.iconSrc} alt={""} width={85} height={85} />}
                      <Flex
                         flex="1"
