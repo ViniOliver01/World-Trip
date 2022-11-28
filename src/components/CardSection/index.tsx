@@ -21,7 +21,7 @@ export default function CardSection({ continent }: CardSectionProps) {
    useEffect(() => {
       async function getResponse() {
          try{
-            const response = await fetch(`${process.env.URL}/cities/?continent=${continent}`)
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_ENDPOINT}/cities/?continent=${continent}`)
             const data = await response.json();
             setCitys(data[0].cities)
          }catch(error) {

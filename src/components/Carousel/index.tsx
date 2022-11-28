@@ -23,7 +23,7 @@ export default function Carousel() {
    useEffect(() => {
       async function getResponse() {
          try {
-            const response = await fetch(`${process.env.URL}/continents/`)
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_ENDPOINT}/continents/`)
             const data = await response.json();
             const bgList = data.map((item: CarouselProps) => {
                return {
