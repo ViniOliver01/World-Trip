@@ -53,6 +53,7 @@ export default function CardSection({ continent }: CardSectionProps) {
             {citys.map(city => {
                return (
                   <Card
+                     key={city.cityname}
                      city={city.cityname}
                      country={city.country}
                      backgroundImg={city.backgroundImg}
