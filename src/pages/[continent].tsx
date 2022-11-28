@@ -30,7 +30,7 @@ export default function Continent() {
    useEffect(() => {
       async function getResponse() {
          try {
-            const response = await fetch(`http://localhost:3004/continents/?path=${path}`)
+            const response = await fetch(`${process.env.URL}/continents/?path=${path}`)
             const data = await response.json();
             setContinent(data[0])
          } catch (error) {

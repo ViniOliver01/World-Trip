@@ -6,7 +6,6 @@ import TravelTypes from '../components/TravelTypes';
 
 export default function Home() {
 
-
    return (
       <Flex
          flex="1"
