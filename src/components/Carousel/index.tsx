@@ -43,13 +43,13 @@ export default function Carousel() {
    }, []);
 
    return (
-      <Box
+      <Flex
          paddingInline={[0, 20]}
+         justifyContent="center"
       >
          <Flex
             maxWidth={1440}
             height={[250, 456]}
-            justifyContent="center"
          >
             <Flex height={"100%"} width={"100%"} className={styles.sliderWrapper}>
                <Swiper
@@ -73,6 +73,6 @@ export default function Carousel() {
                </Swiper>
             </Flex>
          </Flex>
-      </Box>
+      </Flex>
    );
 }
